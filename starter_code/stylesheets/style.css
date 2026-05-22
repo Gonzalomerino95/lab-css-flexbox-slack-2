@@ -8,3 +8,1341 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+/* RESPONSIVE DESIGN FOR PHONES AND SMALLER SCREENS*/
+
+@media (max-width: 768px) {
+  nav {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 25px 15px;
+  }
+
+  .navbar-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    max-width: 35%;
+  }
+
+  .navbar-menu-links {
+    display: none;
+  }
+
+  .nabvar-referal-links {
+    display: none;
+  }
+
+  .navbar-icons-icon {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 10px;
+    font: inherit;
+    color: inherit;
+  }
+
+  header {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .heading h1 {
+    color: white;
+    text-align: center;
+    font-size: 200%;
+  }
+
+  .heading p {
+    color: white;
+    text-align: center;
+  }
+
+  .text-highlight {
+    color: #ecb12f;
+  }
+
+  .heading-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading-signup-button {
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .heading-signup-buttongoogle {
+    position: relative;
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .heading-signup-buttongoogle img {
+    position: absolute;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 1px;
+  }
+
+  .heading-hero-image {
+    overflow: hidden;
+  }
+
+  .heading-hero-image img {
+    max-width: 150%;
+  }
+
+  .trusted-by {
+    background-color: #f3eae2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .trusted-by p {
+    text-align: center;
+  }
+  .trusted-by-companies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .trusted-by-companies div {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .trusted-by-companies img {
+    max-width: 100%;
+    max-height: 45px;
+    object-fit: contain;
+  }
+
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .statistics h3 {
+    text-align: center;
+    color: #540b51;
+    font-size: 150%;
+  }
+
+  .statistics p {
+    text-align: center;
+    margin: 0px;
+    font-size: 75%;
+  }
+
+  .statistics-datapoints {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .statistics-datapoints p {
+    font-size: 65%;
+    font-weight: bold;
+    max-width: 150px;
+  }
+
+  .datapoint {
+    font-size: 300%;
+    color: #540b51;
+  }
+
+  .statistics-datapoints li {
+    margin: 25px 0px;
+  }
+
+  .disclaimer {
+    color: grey;
+    font-size: 50%;
+  }
+
+  .accent {
+    color: black;
+    font-weight: bold;
+  }
+
+  .sales-links {
+    padding: 25px;
+    background-color: #540b51;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sales-links h3 {
+    color: white;
+    font-size: 150%;
+    text-align: center;
+  }
+
+  .sales-links-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .sales-links-container button{
+    margin: 5px;
+  }
+
+  .sales-button-white {
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #540b51;
+    border: 1px solid white;
+  }
+
+  .sales-button-purple {
+    appearance: none;
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #540b51;
+    color: white;
+    border: 1px solid white;
+  }
+
+  footer {
+    padding: 25px;
+  }
+
+  hr {
+    color: rgba(211, 211, 211, 0.205);
+  }
+
+  .relevant-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0px;
+  }
+
+  .relevant-links li {
+    margin: 10px 0px;
+    font-size: 75%;
+    font-weight: bolder;
+  }
+
+  .slack-hyperlink {
+    color: #2e71a6;
+  }
+
+  .social-media-links {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .trademark {
+    color: #454245;
+    text-align: center;
+    font-size: 70%;
+  }
+}
+
+/* 
+RESPONSIVE DESIGN FOR TABLETS
+*/
+@media (min-width: 764px) and (max-width: 1024px) {
+  nav {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+  }
+
+  .navbar-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    max-height: 20px;
+  }
+
+  .navbar-menu-links {
+    display: none;
+  }
+
+  .nabvar-referal-links {
+    display: none;
+  }
+
+  .navbar-icons-icon {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 10px;
+    font: inherit;
+    color: inherit;
+  }
+
+  header {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 25px 25px;
+    height: 65vh;
+    background-image: url("../images/background-singup.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .heading {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .heading h1 {
+    color: white;
+    text-align: start;
+    font-size: 300%;
+  }
+
+  .heading p {
+    color: white;
+    text-align: center;
+  }
+
+  .text-highlight {
+    color: #ecb12f;
+  }
+
+  .heading-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading-signup-button {
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .heading-signup-buttongoogle {
+    position: relative;
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .heading-signup-buttongoogle img {
+    position: absolute;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 1px;
+  }
+
+  .heading-hero-image {
+    overflow: hidden;
+    max-width: 35%;
+  }
+
+  .heading-hero-image img {
+    max-width: 150%;
+  }
+
+  .trusted-by {
+    background-color: #f3eae2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .trusted-by p {
+    text-align: center;
+  }
+  .trusted-by-companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .trusted-by-companies img {
+    display: block;
+    width: auto;
+    max-width: 150px;
+    max-height: 36px;
+    object-fit: contain;
+  }
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .statistics h3 {
+    text-align: center;
+    color: #540b51;
+    font-size: 150%;
+  }
+
+  .statistics p {
+    text-align: center;
+    margin: 0px;
+    font-size: 75%;
+  }
+
+  .statistics-datapoints {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .statistics-datapoints p {
+    font-size: 65%;
+    font-weight: bold;
+    max-width: 150px;
+    text-align: start;
+  }
+
+  .datapoint {
+    font-size: 300%;
+    color: #540b51;
+  }
+
+  .statistics-datapoints li {
+    margin: 25px 0px;
+  }
+
+  .disclaimer {
+    color: grey;
+    font-size: 50%;
+  }
+
+  .accent {
+    color: black;
+    font-weight: bold;
+  }
+
+  .sales-links {
+    padding: 25px;
+    background-color: #540b51;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sales-links h3 {
+    color: white;
+    font-size: 150%;
+    text-align: center;
+  }
+
+  .sales-links-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .sales-links-container button{
+    margin: 5px;
+  }
+
+  .sales-button-white {
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #540b51;
+    border: 1px solid white;
+  }
+
+  .sales-button-purple {
+    appearance: none;
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #540b51;
+    color: white;
+    border: 1px solid white;
+  }
+
+  footer {
+    padding: 25px;
+  }
+
+  hr {
+    color: rgba(211, 211, 211, 0.205);
+  }
+
+  .relevant-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .relevant-links li {
+    margin: 10px 0px;
+    font-size: 75%;
+    font-weight: bolder;
+  }
+
+  .slack-hyperlink {
+    color: #2e71a6;
+  }
+
+  .social-media-links {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+  }
+
+  .trademark {
+    color: #454245;
+    text-align: center;
+    font-size: 70%;
+  }
+}
+
+/* 
+RESPONSIVE DESIGN FOR MEDIUM-SIZED SCREENS
+*/
+@media (min-width: 1024px) and (max-width: 1440px) {
+  nav {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    max-height: 20px;
+  }
+
+  .navbar-menu-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 15px;
+  }
+
+  .navbar-menu-links li {
+    margin: 0px 20px;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+  }
+
+  .nabvar-referal-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    padding: 0px;
+  }
+
+  .navbar-icons-icon {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 10px;
+    font: inherit;
+    color: inherit;
+  }
+
+  .navbar-icons-menu {
+    display: none;
+  }
+
+  .signup-link {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+  }
+
+  .referal-link{
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    color:#540b51;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 75%
+  }
+
+  header {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 25px 25px;
+    height: 65vh;
+    background-image: url("../images/background-singup.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .heading {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .heading h1 {
+    color: white;
+    text-align: start;
+    font-size: 300%;
+  }
+
+  .heading p {
+    color: white;
+    text-align: center;
+  }
+
+  .text-highlight {
+    color: #ecb12f;
+  }
+
+  .heading-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading-signup-button {
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .heading-signup-buttongoogle {
+    position: relative;
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .heading-signup-buttongoogle img {
+    position: absolute;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 1px;
+  }
+
+  .heading-hero-image {
+    overflow: hidden;
+    max-width: 35%;
+  }
+
+  .heading-hero-image img {
+    max-width: 150%;
+  }
+
+  .trusted-by {
+    background-color: #f3eae2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .trusted-by p {
+    text-align: center;
+  }
+  .trusted-by-companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .trusted-by-companies img {
+    display: block;
+    width: auto;
+    max-width: 150px;
+    max-height: 36px;
+    object-fit: contain;
+  }
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .statistics h3 {
+    text-align: center;
+    color: #540b51;
+    font-size: 150%;
+  }
+
+  .statistics p {
+    text-align: center;
+    margin: 0px;
+    font-size: 75%;
+  }
+
+  .statistics-datapoints {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .statistics-datapoints p {
+    font-size: 65%;
+    font-weight: bold;
+    max-width: 150px;
+    text-align: start;
+  }
+
+  .datapoint {
+    font-size: 300%;
+    color: #540b51;
+  }
+
+  .statistics-datapoints li {
+    margin: 25px 0px;
+  }
+
+  .disclaimer {
+    color: grey;
+    font-size: 50%;
+  }
+
+  .accent {
+    color: black;
+    font-weight: bold;
+  }
+
+  .sales-links {
+    padding: 25px;
+    background-color: #540b51;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sales-links h3 {
+    color: white;
+    font-size: 150%;
+    text-align: center;
+  }
+
+  .sales-links-container{
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .sales-links-container button{
+    margin: 20px;
+  }
+
+  .sales-button-white {
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #540b51;
+    border: 1px solid white;
+  }
+
+  .sales-button-purple {
+    appearance: none;
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #540b51;
+    color: white;
+    border: 1px solid white;
+  }
+
+  footer {
+    padding: 25px;
+  }
+
+  hr {
+    color: rgba(211, 211, 211, 0.205);
+  }
+
+  .relevant-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .relevant-links li {
+    margin: 10px 0px;
+    font-size: 75%;
+    font-weight: bolder;
+  }
+
+  .slack-hyperlink {
+    color: #2e71a6;
+  }
+
+  .social-media-links {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+  }
+
+  .trademark {
+    color: #454245;
+    text-align: center;
+    font-size: 70%;
+  }
+}
+
+
+
+
+
+/* 
+RESPONSIVE DESIGN FOR LARGE-SIZED SCREENS
+*/
+@media (min-width: 1440px) {
+  nav {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    max-height: 20px;
+  }
+
+  .navbar-menu-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 15px;
+  }
+
+  .navbar-menu-links li {
+    margin: 0px 20px;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+  }
+
+  .nabvar-referal-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    padding: 0px;
+  }
+
+  .navbar-icons-icon {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 10px;
+    font: inherit;
+    color: inherit;
+  }
+
+  .navbar-icons-menu {
+    display: none;
+  }
+
+  .signup-link {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+  }
+
+  .referal-link{
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    color:#540b51;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 75%
+  }
+
+  header {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 25px 25px;
+    height: 65vh;
+    background-image: url("../images/background-singup.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .heading h1 {
+    color: white;
+    text-align: start;
+    font-size: 300%;
+  }
+
+  .heading p {
+    color: white;
+    text-align: center;
+  }
+
+  .text-highlight {
+    color: #ecb12f;
+  }
+
+  .heading-signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading-signup-button {
+    width: 300px;
+    height: 45px;
+    margin: 5px 10px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .heading-signup-buttongoogle {
+    position: relative;
+    width: 300px;
+    height: 45px;
+    margin: 5px 10px;
+    font-size: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .heading-signup-buttongoogle img {
+    position: absolute;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 1px;
+  }
+
+  .heading-hero-image {
+    padding: 150px;
+    max-width: 50%;
+  }
+
+  .heading-hero-image img {
+    max-width: 100%;
+  }
+
+  .trusted-by {
+    background-color: #f3eae2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .trusted-by p {
+    text-align: center;
+  }
+  .trusted-by-companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .trusted-by-companies img {
+    display: block;
+    width: auto;
+    max-width: 150px;
+    max-height: 36px;
+    object-fit: contain;
+  }
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .statistics h3 {
+    text-align: center;
+    color: #540b51;
+    font-size: 150%;
+  }
+
+  .statistics p {
+    text-align: center;
+    margin: 0px;
+    font-size: 75%;
+  }
+
+  .statistics-datapoints {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .statistics-datapoints p {
+    font-size: 65%;
+    font-weight: bold;
+    max-width: 150px;
+    text-align: start;
+  }
+
+  .datapoint {
+    font-size: 300%;
+    color: #540b51;
+  }
+
+  .statistics-datapoints li {
+    margin: 25px 0px;
+  }
+
+  .disclaimer {
+    color: grey;
+    font-size: 50%;
+  }
+
+  .accent {
+    color: black;
+    font-weight: bold;
+  }
+
+  .sales-links {
+    padding: 25px;
+    background-color: #540b51;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sales-links h3 {
+    color: white;
+    font-size: 150%;
+    text-align: center;
+  }
+
+  .sales-links-container{
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .sales-links-container button{
+    margin: 20px;
+  }
+
+  .sales-button-white {
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #540b51;
+    border: 1px solid white;
+  }
+
+  .sales-button-purple {
+    appearance: none;
+    width: 300px;
+    height: 45px;
+    margin: 5px 0px;
+    font-size: 90%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #540b51;
+    color: white;
+    border: 1px solid white;
+  }
+
+  footer {
+    padding: 25px;
+  }
+
+  hr {
+    color: rgba(211, 211, 211, 0.205);
+  }
+
+  .relevant-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .relevant-links li {
+    margin: 10px 0px;
+    font-size: 75%;
+    font-weight: bolder;
+  }
+
+  .slack-hyperlink {
+    color: #2e71a6;
+  }
+
+  .social-media-links {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+  }
+
+  .trademark {
+    color: #454245;
+    text-align: center;
+    font-size: 70%;
+  }
+}
